@@ -1,4 +1,4 @@
-NÁVOD NA SPUŠTĚNÍ APLIKACE
+###NÁVOD NA SPUŠTĚNÍ APLIKACE (s REST serverem a databází)
 
 Aplikaci lze spustit na emulátoru nebo na reálném zařízení. Android projekt se nachází ve složce
 LunchFriends, kterou lze otevřít v Android Studiu. Program lze spustit rovnou v Android Studiu, nebo
