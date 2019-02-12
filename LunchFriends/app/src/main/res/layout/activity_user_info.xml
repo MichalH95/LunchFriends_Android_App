@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.UserInfoActivity">
+
+	<TextView
+		android:id="@+id/inviter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="10dp"
+		android:textSize="20sp"
+		android:text="@string/user_contact"/>
+
+	<ImageView
+		android:id="@+id/userImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="50dp"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:id="@+id/fullnameText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="160dp"
+		android:layout_alignTop="@+id/userImage"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:maxLines="1"
+		android:lines="1"
+		android:singleLine="true"
+		android:text="@string/fullname_colon"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:id="@+id/emailText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="50dp"
+		android:layout_alignTop="@+id/fullnameText"
+		android:text="@string/email_colon"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:id="@+id/phoneText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="50dp"
+		android:layout_alignTop="@+id/emailText"
+		android:text="@string/phone_colon"
+		android:textSize="20sp"/>
+
+	<Button
+		android:id="@+id/backButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="69dp"
+		android:text="@string/back"/>
+
+</RelativeLayout>

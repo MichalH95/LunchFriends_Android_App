@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="huzevka.lunchfriends.activity.SearchFriends1Activity">
+
+	<TextView
+		android:id="@+id/textTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:textSize="24dp"
+		android:text="@string/where_would"/>
+
+	<!-- /////////////////////////////////////////// -->
+
+	<TextView
+		android:id="@+id/textPlace"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/pickPlaceButton"
+		android:layout_marginEnd="50dp"
+		android:layout_alignParentStart="true"
+		android:layout_marginStart="30dp"
+		android:textStyle="bold"
+		android:text="@string/place"/>
+
+	<Button
+		android:id="@+id/pickPlaceButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toEndOf="@id/textPlace"
+		android:layout_alignTop="@id/textTitle"
+		android:layout_marginTop="70dp"
+		android:text="@string/pick_place"/>
+
+	<TextView
+		android:id="@+id/placeName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginStart="120dp"
+		android:layout_marginTop="150dp"
+		android:maxLines="1"
+		android:lines="1"
+		android:singleLine="true"
+		android:text=""/>
+
+	<!-- /////////////////////////////////////////// -->
+
+	<TextView
+		android:id="@+id/maxDistanceText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_toEndOf="@id/textDistance"
+		android:layout_marginStart="15dp"
+		android:layout_marginTop="180dp"
+		android:maxLines="1"
+		android:lines="1"
+		android:singleLine="true"
+		android:text="@string/not_matter"/>
+
+	<TextView
+		android:id="@+id/textDistance"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="180dp"
+		android:layout_alignStart="@id/textPlace"
+		android:textStyle="bold"
+		android:text="@string/max_distance"/>
+
+	<SeekBar
+		android:id="@+id/distanceBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/placeName"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginStart="80dp"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="60dp"
+		android:layout_marginTop="210dp"/>
+
+	<!-- /////////////////////////////////////////// -->
+
+	<TextView
+		android:id="@+id/textTime"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@id/textPlace"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="280dp"
+		android:textStyle="bold"
+		android:text="@string/time"/>
+
+	<TextView
+		android:id="@+id/textHour"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="280dp"
+		android:layout_marginStart="100dp"
+		android:layout_marginEnd="8dp"
+		android:text="@string/hour_colon"/>
+
+	<NumberPicker
+		android:id="@+id/hourPicker"
+		android:layout_width="wrap_content"
+		android:layout_height="100dp"
+		android:layout_marginEnd="8dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="240dp"
+		android:layout_toEndOf="@id/textHour">
+	</NumberPicker>
+
+	<TextView
+		android:id="@+id/textMinute"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toEndOf="@+id/hourPicker"
+		android:layout_marginEnd="8dp"
+		android:layout_alignBaseline="@id/textHour"
+		android:text="@string/minute_colon"/>
+
+	<NumberPicker
+		android:id="@+id/minutePicker"
+		android:layout_width="wrap_content"
+		android:layout_height="100dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="240dp"
+		android:layout_toEndOf="@id/textMinute">
+	</NumberPicker>
+
+
+	<!-- /////////////////////////////////////////// -->
+
+	<TextView
+		android:id="@+id/textTimeDiff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="360dp"
+		android:layout_alignStart="@id/textPlace"
+		android:textStyle="bold"
+		android:text="@string/max_time_diff"/>
+
+	<TextView
+		android:id="@+id/maxTimeDiffText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_toEndOf="@id/textTimeDiff"
+		android:layout_marginStart="15dp"
+		android:layout_marginTop="360dp"
+		android:maxLines="1"
+		android:lines="1"
+		android:singleLine="true"
+		android:text="@string/not_matter"/>
+
+	<SeekBar
+		android:id="@+id/timeDiffBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/maxTimeDiffText"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginStart="80dp"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="60dp"
+		android:layout_marginTop="390dp"/>
+
+	<!-- /////////////////////////////////////////// -->
+
+	<Button
+		android:id="@+id/previousButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="60dp"
+		android:layout_below="@id/timeDiffBar"
+		android:layout_marginTop="45dp"
+		android:text="@string/previous"/>
+
+	<TextView
+		android:id="@+id/textRequired"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/timeDiffBar"
+		android:layout_marginTop="10dp"
+		android:layout_alignStart="@+id/searchButton"
+		android:text="@string/all_fields_are_optional"/>
+
+	<Button
+		android:id="@+id/searchButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="60dp"
+		android:layout_below="@id/timeDiffBar"
+		android:layout_marginTop="45dp"
+		android:text="@string/search"/>
+
+
+
+</RelativeLayout>

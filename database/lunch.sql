@@ -1,0 +1,43 @@
+DROP TABLE Lunch CASCADE CONSTRAINTS PURGE;
+
+CREATE TABLE Lunch
+  (
+    LID         INTEGER NOT NULL,
+    PLACEID     VARCHAR2 (120 CHAR) NOT NULL,
+    LDATE       DATE NOT NULL,
+    PID         INTEGER NOT NULL
+  ) ;
+ALTER TABLE Lunch ADD CONSTRAINT Lunch_PK PRIMARY KEY ( LID ) ;
+ALTER TABLE Lunch ADD CONSTRAINT Lunch_Person_FK FOREIGN KEY ( PID ) REFERENCES Person ( PID ) ;
+
+DROP SEQUENCE Lunch_sequence;
+
+CREATE SEQUENCE Lunch_sequence;
+
+CREATE OR REPLACE TRIGGER Lunch_on_insert
+  BEFORE INSERT ON Lunch
+  FOR EACH ROW
+BEGIN
+  SELECT Lunch_sequence.nextval
+  INTO :new.LID
+  FROM dual;
+END;
+/
+
+INSERT INTO Lunch (PLACEID, LDATE, PID)
+VALUES ('ChIJ3ZeNEzqVC0cRJ8a80mYc8A4', sysdate+(1/24)+5/(24*60), 3);
+
+INSERT INTO Lunch (PLACEID, LDATE, PID)
+VALUES ('ChIJteZiRTqVC0cRw0VL4NFmd-k', sysdate+(1/24)+37/(24*60), 4);
+
+INSERT INTO Lunch (PLACEID, LDATE, PID)
+VALUES ('ChIJ3ZeNEzqVC0cRJ8a80mYc8A4', sysdate+(2/24)+15/(24*60), 6);
+
+INSERT INTO Lunch (PLACEID, LDATE, PID)
+VALUES ('ChIJteZiRTqVC0cRw0VL4NFmd-k', sysdate+12/(24*60), 10);
+
+commit;
+
+--delete from lunch;
+
+SELECT * FROM Lunch;

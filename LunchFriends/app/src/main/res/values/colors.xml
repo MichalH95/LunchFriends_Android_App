@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="colorPrimary">#25CC78</color>
+	<color name="colorPrimaryDark">#20B56A</color>
+	<color name="colorAccent">#02D8B0</color>
+
+	<!-- Green -->
+	<color name="green_temp">#25CC78</color>
+	<color name="bright_green">#02D8B0</color>
+	<color name="green_pressed">#35E375</color>
+	<color name="green_start">#28DF83</color>
+	<color name="green_end">#20B56A</color>
+	<color name="green_dark">#159204</color>
+
+	<color name="grey">#E8E8E8</color>
+
+</resources>

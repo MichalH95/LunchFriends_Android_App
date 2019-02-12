@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:context="huzevka.lunchfriends.activity.HomeActivity">
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="2dp"
+		android:background="@color/green_temp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="107dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"/>
+	<!--android:layout_below="@+id/logoutButton"-->
+	<!--android:layout_marginTop="10dp"-->
+
+	<Button
+		android:id="@+id/goOnLunchButton"
+		android:layout_width="wrap_content"
+		android:layout_height="46dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="135dp"
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+		android:background="@drawable/button_selector"
+		android:text="@string/go_on_lunch"/>
+
+	<Button
+		android:id="@+id/searchPeopleButton"
+		android:layout_width="wrap_content"
+		android:layout_height="46dp"
+		android:layout_below="@+id/goOnLunchButton"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+		android:background="@drawable/button_selector"
+		android:text="@string/search_people"/>
+
+	<Button
+		android:id="@+id/browseButton"
+		android:layout_width="wrap_content"
+		android:layout_height="46dp"
+		android:layout_below="@+id/searchPeopleButton"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+		android:background="@drawable/button_selector"
+		android:text="@string/browse_people"/>
+
+	<Button
+		android:id="@+id/historyButton"
+		android:layout_width="wrap_content"
+		android:layout_height="46dp"
+		android:layout_below="@+id/browseButton"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+		android:background="@drawable/button_selector"
+		android:text="@string/lunch_history"/>
+
+	<Button
+		android:id="@+id/exitButton"
+		android:layout_width="wrap_content"
+		android:layout_height="46dp"
+		android:layout_below="@+id/historyButton"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+		android:background="@drawable/button_selector"
+		android:text="@string/exit"/>
+
+	<!-- /////////////////////////////////////////// -->
+
+	<TextView
+		android:id="@+id/fullnameText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="40dp"
+		android:text="[Full name]"
+		android:textSize="20dp"/>
+
+	<!--
+	<Button
+		android:id="@+id/profileButton"
+		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="12dp"
+		android:layout_marginLeft="16dp"
+		android:layout_toEndOf="@+id/fullnameText"
+		android:text="@string/profile"
+		android:visibility="gone"/>
+	-->
+
+	<Button
+		android:id="@+id/logoutButton"
+		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="57dp"
+		android:layout_marginLeft="16dp"
+		android:layout_toEndOf="@+id/fullnameText"
+		android:layout_below="@+id/profileButton"
+		android:layout_alignBaseline="@id/fullnameText"
+		android:text="@string/logout"/>
+	<!--android:layout_marginTop="5dp"-->
+
+	<ImageView
+		android:id="@+id/userImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toStartOf="@+id/fullnameText"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="16dp"/>
+
+</RelativeLayout>
